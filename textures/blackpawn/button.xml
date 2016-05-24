@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xptsml version="0.1.3">
+    <operatorstack>
+        <operator active="false" id="0" name="" selected="false" type="org.polygonize.ats.operators.generators.Flat" width="96" x="160" y="64">
+            <params>
+                <param name="color" value="#8A845BFF"/>
+            </params>
+        </operator>
+        <operator active="false" id="1" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="80">
+            <inputs>
+                <input idref="0"/>
+            </inputs>
+            <params>
+                <param name="color" value="#BFB77EFF"/>
+                <param name="position" value="49,105"/>
+                <param name="dimension" value="155,29"/>
+            </params>
+        </operator>
+        <operator active="false" id="2" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="96">
+            <inputs>
+                <input idref="1"/>
+            </inputs>
+            <params>
+                <param name="color" value="#000000FF"/>
+                <param name="position" value="205,105"/>
+                <param name="dimension" value="0,29"/>
+            </params>
+        </operator>
+        <operator active="false" id="3" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="112">
+            <inputs>
+                <input idref="2"/>
+            </inputs>
+            <params>
+                <param name="color" value="#000000FF"/>
+                <param name="position" value="49,134"/>
+                <param name="dimension" value="156,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="4" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="128">
+            <inputs>
+                <input idref="3"/>
+            </inputs>
+            <params>
+                <param name="color" value="#545454FF"/>
+                <param name="position" value="49,105"/>
+                <param name="dimension" value="0,28"/>
+            </params>
+        </operator>
+        <operator active="false" id="5" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="144">
+            <inputs>
+                <input idref="4"/>
+            </inputs>
+            <params>
+                <param name="color" value="#545454FF"/>
+                <param name="position" value="49,105"/>
+                <param name="dimension" value="156,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="6" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="160">
+            <inputs>
+                <input idref="5"/>
+            </inputs>
+            <params>
+                <param name="color" value="#D4CFA8FF"/>
+                <param name="position" value="50,106"/>
+                <param name="dimension" value="0,27"/>
+            </params>
+        </operator>
+        <operator active="false" id="7" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="176">
+            <inputs>
+                <input idref="6"/>
+            </inputs>
+            <params>
+                <param name="color" value="#D4CFA8FF"/>
+                <param name="position" value="50,106"/>
+                <param name="dimension" value="154,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="8" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="192">
+            <inputs>
+                <input idref="7"/>
+            </inputs>
+            <params>
+                <param name="color" value="#706C4AFF"/>
+                <param name="position" value="50,133"/>
+                <param name="dimension" value="154,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="9" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="208">
+            <inputs>
+                <input idref="8"/>
+            </inputs>
+            <params>
+                <param name="color" value="#706C4AFF"/>
+                <param name="position" value="204,107"/>
+                <param name="dimension" value="0,26"/>
+            </params>
+        </operator>
+        <operator active="false" id="10" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="224">
+            <inputs>
+                <input idref="9"/>
+            </inputs>
+            <params>
+                <param name="color" value="#CBC495FF"/>
+                <param name="position" value="51,107"/>
+                <param name="dimension" value="0,25"/>
+            </params>
+        </operator>
+        <operator active="false" id="11" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="240">
+            <inputs>
+                <input idref="10"/>
+            </inputs>
+            <params>
+                <param name="color" value="#CBC495FF"/>
+                <param name="position" value="52,107"/>
+                <param name="dimension" value="151,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="12" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="256">
+            <inputs>
+                <input idref="11"/>
+            </inputs>
+            <params>
+                <param name="color" value="#989264FF"/>
+                <param name="position" value="203,108"/>
+                <param name="dimension" value="0,24"/>
+            </params>
+        </operator>
+        <operator active="false" id="13" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="96" x="160" y="272">
+            <inputs>
+                <input idref="12"/>
+            </inputs>
+            <params>
+                <param name="color" value="#989264FF"/>
+                <param name="position" value="51,132"/>
+                <param name="dimension" value="151,0"/>
+            </params>
+        </operator>
+        <operator active="false" id="14" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="160" y="288">
+            <inputs>
+                <input idref="13"/>
+            </inputs>
+            <params>
+                <param name="color" value="#524643FF"/>
+                <param name="height" value="20"/>
+                <param name="position" value="96,107"/>
+                <param name="text" value="Cancel"/>
+                <param name="font" value="Arial"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="true" id="15" name="" selected="true" type="org.polygonize.ats.operators.filters.Convolution" width="96" x="160" y="304">
+            <inputs>
+                <input idref="14"/>
+            </inputs>
+            <params>
+                <param name="radius" value="3"/>
+                <param name="amount" value="139"/>
+                <param name="threshold" value="127"/>
+            </params>
+        </operator>
+    </operatorstack>
+    <comments/>
+</xptsml>

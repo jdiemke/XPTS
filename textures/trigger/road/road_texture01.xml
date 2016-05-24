@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xptsml version="0.1.3">
+    <operatorstack>
+        <operator active="false" id="0" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="1072" y="16">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="6"/>
+                <param name="fbm octaves" value="3"/>
+                <param name="random seed" value="2"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="1" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="976" y="32">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="3"/>
+                <param name="fbm octaves" value="8"/>
+                <param name="random seed" value="2"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="2" name="" selected="false" type="org.polygonize.ats.operators.filters.Color" width="96" x="1072" y="32">
+            <inputs>
+                <input idref="0"/>
+            </inputs>
+            <params>
+                <param name="mode" value="0"/>
+                <param name="color" value="#FFB4FFFF"/>
+            </params>
+        </operator>
+        <operator active="false" id="3" name="" selected="false" type="org.polygonize.ats.operators.generators.GlowRect" width="96" x="784" y="48">
+            <params>
+                <param name="center" value="127,126"/>
+                <param name="radius" value="16,15"/>
+                <param name="size" value="25,232"/>
+                <param name="color" value="#78849478"/>
+                <param name="blend" value="1"/>
+                <param name="softness" value="231"/>
+            </params>
+        </operator>
+        <operator active="false" id="4" name="" selected="false" type="org.polygonize.ats.operators.generators.GlowRect" width="96" x="880" y="48">
+            <params>
+                <param name="center" value="127,124"/>
+                <param name="radius" value="24,19"/>
+                <param name="size" value="38,240"/>
+                <param name="color" value="#DADBDAFF"/>
+                <param name="blend" value="1"/>
+                <param name="softness" value="249"/>
+            </params>
+        </operator>
+        <operator active="false" id="5" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="976" y="48">
+            <inputs>
+                <input idref="1"/>
+            </inputs>
+            <params>
+                <param name="hue" value="74"/>
+                <param name="saturation" value="68"/>
+                <param name="contrast" value="12"/>
+                <param name="brightness" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="6" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="1072" y="48">
+            <inputs>
+                <input idref="2"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="50"/>
+                <param name="contrast" value="47"/>
+                <param name="brightness" value="102"/>
+            </params>
+        </operator>
+        <operator active="false" id="7" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="784" y="64">
+            <inputs>
+                <input idref="3"/>
+                <input idref="4"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="91"/>
+            </params>
+        </operator>
+        <operator active="false" id="8" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="976" y="64">
+            <inputs>
+                <input idref="5"/>
+                <input idref="6"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="2"/>
+                <param name="alpha" value="108"/>
+            </params>
+        </operator>
+        <operator active="false" id="9" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="16" y="80">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="3"/>
+                <param name="fbm octaves" value="8"/>
+                <param name="random seed" value="2"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="10" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="384" x="784" y="80">
+            <inputs>
+                <input idref="7"/>
+                <input idref="8"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="3"/>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="11" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="16" y="96">
+            <inputs>
+                <input idref="9"/>
+            </inputs>
+            <params>
+                <param name="hue" value="74"/>
+                <param name="saturation" value="68"/>
+                <param name="contrast" value="8"/>
+                <param name="brightness" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="12" name="" selected="false" type="org.polygonize.ats.operators.generators.GlowRect" width="96" x="112" y="96">
+            <params>
+                <param name="center" value="127,187"/>
+                <param name="radius" value="4,4"/>
+                <param name="size" value="3,97"/>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="blend" value="1"/>
+                <param name="softness" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="13" name="" selected="false" type="org.polygonize.ats.operators.generators.GlowRect" width="96" x="208" y="96">
+            <params>
+                <param name="center" value="23,129"/>
+                <param name="radius" value="4,4"/>
+                <param name="size" value="3,255"/>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="blend" value="1"/>
+                <param name="softness" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="14" name="" selected="false" type="org.polygonize.ats.operators.generators.GlowRect" width="96" x="304" y="96">
+            <params>
+                <param name="center" value="232,129"/>
+                <param name="radius" value="4,4"/>
+                <param name="size" value="3,255"/>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="blend" value="1"/>
+                <param name="softness" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="15" name="" selected="false" type="org.polygonize.ats.operators.misc.Nop" width="192" x="784" y="96">
+            <inputs>
+                <input idref="10"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="16" name="" selected="false" type="org.polygonize.ats.operators.AtsNormalMapOperator" width="192" x="976" y="96">
+            <inputs>
+                <input idref="10"/>
+            </inputs>
+            <params>
+                <param name="scale" value="225"/>
+            </params>
+        </operator>
+        <operator active="false" id="17" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="16" y="112">
+            <inputs>
+                <input idref="11"/>
+                <input idref="12"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="109"/>
+            </params>
+        </operator>
+        <operator active="false" id="18" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="208" y="112">
+            <inputs>
+                <input idref="13"/>
+                <input idref="14"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="19" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="400" y="112">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="6"/>
+                <param name="fbm octaves" value="3"/>
+                <param name="random seed" value="2"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="20" name="" selected="false" type="org.polygonize.ats.operators.AtsPhongOperator" width="384" x="784" y="112">
+            <inputs>
+                <input idref="15"/>
+                <input idref="16"/>
+            </inputs>
+            <params>
+                <param name="ambient" value="#FFFFDDFF"/>
+                <param name="diffuse" value="#888F57FF"/>
+                <param name="specular" value="#4B3F3BFF"/>
+                <param name="specPower" value="1"/>
+                <param name="xPosition" value="120"/>
+                <param name="yPosition" value="137"/>
+            </params>
+        </operator>
+        <operator active="false" id="21" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="384" x="16" y="128">
+            <inputs>
+                <input idref="17"/>
+                <input idref="18"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="109"/>
+            </params>
+        </operator>
+        <operator active="false" id="22" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="400" y="128">
+            <inputs>
+                <input idref="19"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="176"/>
+                <param name="contrast" value="28"/>
+                <param name="brightness" value="234"/>
+            </params>
+        </operator>
+        <operator active="false" id="23" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="384" x="784" y="128">
+            <inputs>
+                <input idref="20"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="21"/>
+                <param name="center" value="244,107"/>
+            </params>
+        </operator>
+        <operator active="false" id="24" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="480" x="16" y="144">
+            <inputs>
+                <input idref="21"/>
+                <input idref="22"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="2"/>
+                <param name="alpha" value="108"/>
+            </params>
+        </operator>
+        <operator active="false" id="25" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="496" y="144">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="8"/>
+                <param name="fbm octaves" value="8"/>
+                <param name="random seed" value="2"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="26" name="" selected="false" type="org.polygonize.ats.operators.generators.Gradient" width="96" x="592" y="144">
+            <params>
+                <param name="color 0" value="#000000FF"/>
+                <param name="color 1" value="#FFFFFFFF"/>
+                <param name="angle" value="0"/>
+                <param name="width" value="150"/>
+                <param name="pos" value="66,127"/>
+                <param name="mode" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="27" name="" selected="false" type="org.polygonize.ats.operators.generators.Gradient" width="96" x="688" y="144">
+            <params>
+                <param name="color 0" value="#000000FF"/>
+                <param name="color 1" value="#FFFFFFFF"/>
+                <param name="angle" value="0"/>
+                <param name="width" value="150"/>
+                <param name="pos" value="187,127"/>
+                <param name="mode" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="28" name="" selected="false" type="org.polygonize.ats.operators.AtsRectangleOperator" width="384" x="784" y="144">
+            <inputs>
+                <input idref="23"/>
+            </inputs>
+            <params>
+                <param name="color" value="#000000FF"/>
+                <param name="position" value="14,0"/>
+                <param name="dimension" value="241,255"/>
+            </params>
+        </operator>
+        <operator active="false" id="29" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="480" x="16" y="160">
+            <inputs>
+                <input idref="24"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="72"/>
+                <param name="contrast" value="101"/>
+                <param name="brightness" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="30" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="496" y="160">
+            <inputs>
+                <input idref="25"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="127"/>
+                <param name="contrast" value="49"/>
+                <param name="brightness" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="31" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="592" y="160">
+            <inputs>
+                <input idref="26"/>
+                <input idref="27"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="32" name="" selected="false" type="org.polygonize.ats.operators.misc.Nop" width="192" x="784" y="160">
+            <inputs>
+                <input idref="28"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="33" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="192" x="976" y="160">
+            <inputs>
+                <input idref="28"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="64"/>
+                <param name="center" value="139,127"/>
+            </params>
+        </operator>
+        <operator active="false" id="34" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="576" x="16" y="176">
+            <inputs>
+                <input idref="29"/>
+                <input idref="30"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="2"/>
+                <param name="alpha" value="70"/>
+            </params>
+        </operator>
+        <operator active="false" id="35" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="192" x="592" y="176">
+            <inputs>
+                <input idref="31"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="127"/>
+                <param name="contrast" value="190"/>
+                <param name="brightness" value="37"/>
+            </params>
+        </operator>
+        <operator active="false" id="36" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="384" x="784" y="176">
+            <inputs>
+                <input idref="32"/>
+                <input idref="33"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="37" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="768" x="16" y="192">
+            <inputs>
+                <input idref="34"/>
+                <input idref="35"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="2"/>
+                <param name="alpha" value="98"/>
+            </params>
+        </operator>
+        <operator active="false" id="38" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="192" x="784" y="192">
+            <inputs>
+                <input idref="36"/>
+            </inputs>
+            <params>
+                <param name="hue" value="255"/>
+                <param name="saturation" value="134"/>
+                <param name="contrast" value="100"/>
+                <param name="brightness" value="126"/>
+            </params>
+        </operator>
+        <operator active="false" id="39" name="" selected="false" type="org.polygonize.ats.operators.AtsGammaCorrectionOperator" width="192" x="976" y="192">
+            <inputs>
+                <input idref="36"/>
+            </inputs>
+            <params>
+                <param name="gamma" value="73"/>
+                <param name="amplify" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="40" name="" selected="false" type="org.polygonize.ats.operators.AtsMappedAlphaBlendOperator" width="1152" x="16" y="208">
+            <inputs>
+                <input idref="37"/>
+                <input idref="38"/>
+                <input idref="39"/>
+            </inputs>
+            <params>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="true" id="41" name="" selected="true" type="org.polygonize.ats.operators.filters.Convolution" width="1152" x="16" y="224">
+            <inputs>
+                <input idref="40"/>
+            </inputs>
+            <params>
+                <param name="radius" value="3"/>
+                <param name="amount" value="181"/>
+                <param name="threshold" value="127"/>
+            </params>
+        </operator>
+    </operatorstack>
+    <comments/>
+</xptsml>

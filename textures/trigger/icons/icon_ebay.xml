@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xptsml version="0.1.3">
+    <operatorstack>
+        <operator active="false" id="0" name="" selected="false" type="org.polygonize.ats.operators.generators.Flat" width="96" x="320" y="16">
+            <params>
+                <param name="color" value="#B4B4B4FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="1" name="" selected="false" type="org.polygonize.ats.operators.generators.Flat" width="96" x="512" y="16">
+            <params>
+                <param name="color" value="#000000FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="2" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="32">
+            <inputs>
+                <input idref="0"/>
+            </inputs>
+            <params>
+                <param name="color" value="#0000FFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="0,82"/>
+                <param name="text" value="G"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="3" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="32">
+            <inputs>
+                <input idref="1"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="0,82"/>
+                <param name="text" value="G"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="4" name="" selected="false" type="org.polygonize.ats.operators.generators.Flat" width="96" x="16" y="48">
+            <params>
+                <param name="color" value="#B4B4B4FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="5" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="48">
+            <inputs>
+                <input idref="2"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FF0000FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="53,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="6" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="48">
+            <inputs>
+                <input idref="3"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="53,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="7" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="64">
+            <inputs>
+                <input idref="4"/>
+            </inputs>
+            <params>
+                <param name="color" value="#1E1EFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="0,82"/>
+                <param name="text" value="G"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="8" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="64">
+            <inputs>
+                <input idref="5"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFF00FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="90,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="9" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="64">
+            <inputs>
+                <input idref="6"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="90,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="10" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="80">
+            <inputs>
+                <input idref="7"/>
+            </inputs>
+            <params>
+                <param name="color" value="#F00000FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="53,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="11" name="mask" selected="false" type="org.polygonize.ats.operators.misc.Load" width="96" x="224" y="80">
+            <inputs>
+                <input idref="33"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="12" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="80">
+            <inputs>
+                <input idref="8"/>
+            </inputs>
+            <params>
+                <param name="color" value="#0000FFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="125,82"/>
+                <param name="text" value="g"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="13" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="80">
+            <inputs>
+                <input idref="9"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="125,82"/>
+                <param name="text" value="g"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="14" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="96">
+            <inputs>
+                <input idref="10"/>
+            </inputs>
+            <params>
+                <param name="color" value="#D2D200FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="90,82"/>
+                <param name="text" value="o"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="15" name="" selected="false" type="org.polygonize.ats.operators.filters.Color" width="96" x="224" y="96">
+            <inputs>
+                <input idref="11"/>
+            </inputs>
+            <params>
+                <param name="mode" value="4"/>
+                <param name="color" value="#FFFFFFFF"/>
+            </params>
+        </operator>
+        <operator active="false" id="16" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="96">
+            <inputs>
+                <input idref="12"/>
+            </inputs>
+            <params>
+                <param name="color" value="#00FF00FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="162,82"/>
+                <param name="text" value="l"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="17" name="mask" selected="false" type="org.polygonize.ats.operators.misc.Load" width="96" x="416" y="96">
+            <inputs>
+                <input idref="33"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="18" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="96">
+            <inputs>
+                <input idref="13"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="162,82"/>
+                <param name="text" value="l"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="19" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="112">
+            <inputs>
+                <input idref="14"/>
+            </inputs>
+            <params>
+                <param name="color" value="#1919FFFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="125,82"/>
+                <param name="text" value="g"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="20" name="" selected="false" type="org.polygonize.ats.operators.generators.Flat" width="96" x="128" y="112">
+            <params>
+                <param name="color" value="#B4B4B4FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="21" name="" selected="false" type="org.polygonize.ats.operators.AtsBlurOperator" width="96" x="224" y="112">
+            <inputs>
+                <input idref="15"/>
+            </inputs>
+            <params>
+                <param name="radius" value="1"/>
+                <param name="amplify" value="32"/>
+                <param name="passes" value="4"/>
+                <param name="direction" value="0"/>
+            </params>
+        </operator>
+        <operator active="false" id="22" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="320" y="112">
+            <inputs>
+                <input idref="16"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FF0000FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="180,82"/>
+                <param name="text" value="e"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="23" name="" selected="false" type="org.polygonize.ats.operators.AtsBlurOperator" width="96" x="416" y="112">
+            <inputs>
+                <input idref="17"/>
+            </inputs>
+            <params>
+                <param name="radius" value="1"/>
+                <param name="amplify" value="30"/>
+                <param name="passes" value="8"/>
+                <param name="direction" value="0"/>
+            </params>
+        </operator>
+        <operator active="false" id="24" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="512" y="112">
+            <inputs>
+                <input idref="18"/>
+            </inputs>
+            <params>
+                <param name="color" value="#FFFFE7FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="180,82"/>
+                <param name="text" value="e"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="25" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="128">
+            <inputs>
+                <input idref="19"/>
+            </inputs>
+            <params>
+                <param name="color" value="#0FB90AFF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="162,82"/>
+                <param name="text" value="l"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="26" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="192" x="128" y="128">
+            <inputs>
+                <input idref="20"/>
+                <input idref="21"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="0"/>
+                <param name="alpha" value="114"/>
+            </params>
+        </operator>
+        <operator active="false" id="27" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="96" x="320" y="128">
+            <inputs>
+                <input idref="22"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="72"/>
+                <param name="center" value="104,127"/>
+            </params>
+        </operator>
+        <operator active="false" id="28" name="" selected="false" type="org.polygonize.ats.operators.AtsNormalMapOperator" width="96" x="416" y="128">
+            <inputs>
+                <input idref="23"/>
+            </inputs>
+            <params>
+                <param name="scale" value="106"/>
+            </params>
+        </operator>
+        <operator active="false" id="29" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="96" x="512" y="128">
+            <inputs>
+                <input idref="24"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="72"/>
+                <param name="center" value="104,127"/>
+            </params>
+        </operator>
+        <operator active="false" id="30" name="" selected="false" type="org.polygonize.ats.operators.generators.Text" width="96" x="16" y="144">
+            <inputs>
+                <input idref="25"/>
+            </inputs>
+            <params>
+                <param name="color" value="#F50000FF"/>
+                <param name="height" value="75"/>
+                <param name="position" value="180,82"/>
+                <param name="text" value="e"/>
+                <param name="font" value="Times New Roman"/>
+                <param name="bold" value="false"/>
+                <param name="italic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="31" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="192" x="128" y="144">
+            <inputs>
+                <input idref="26"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="64"/>
+                <param name="center" value="123,123"/>
+            </params>
+        </operator>
+        <operator active="false" id="32" name="" selected="false" type="org.polygonize.ats.operators.AtsPhongOperator" width="192" x="320" y="144">
+            <inputs>
+                <input idref="27"/>
+                <input idref="28"/>
+            </inputs>
+            <params>
+                <param name="ambient" value="#9CA490FF"/>
+                <param name="diffuse" value="#000000FF"/>
+                <param name="specular" value="#5B5319FF"/>
+                <param name="specPower" value="4"/>
+                <param name="xPosition" value="117"/>
+                <param name="yPosition" value="118"/>
+            </params>
+        </operator>
+        <operator active="false" id="33" name="mask" selected="false" type="org.polygonize.ats.operators.misc.Store" width="96" x="512" y="144">
+            <inputs>
+                <input idref="29"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="34" name="" selected="false" type="org.polygonize.ats.operators.AtsRotoZoomOperator" width="96" x="16" y="160">
+            <inputs>
+                <input idref="30"/>
+            </inputs>
+            <params>
+                <param name="angle" value="0"/>
+                <param name="zoom" value="72"/>
+                <param name="center" value="104,127"/>
+            </params>
+        </operator>
+        <operator active="false" id="35" name="" selected="false" type="org.polygonize.ats.operators.AtsMappedAlphaBlendOperator" width="480" x="128" y="160">
+            <inputs>
+                <input idref="31"/>
+                <input idref="32"/>
+                <input idref="33"/>
+            </inputs>
+            <params>
+                <param name="alpha" value="122"/>
+            </params>
+        </operator>
+        <operator active="false" id="36" name="text" selected="false" type="org.polygonize.ats.operators.misc.Store" width="96" x="16" y="176">
+            <inputs>
+                <input idref="34"/>
+            </inputs>
+        </operator>
+        <operator active="true" id="37" name="" selected="false" type="org.polygonize.ats.operators.filters.Convolution" width="480" x="128" y="176">
+            <inputs>
+                <input idref="35"/>
+            </inputs>
+            <params>
+                <param name="radius" value="3"/>
+                <param name="amount" value="255"/>
+                <param name="threshold" value="127"/>
+            </params>
+        </operator>
+    </operatorstack>
+    <comments/>
+</xptsml>

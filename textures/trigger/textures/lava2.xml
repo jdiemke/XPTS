@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xptsml version="0.1.3">
+    <operatorstack>
+        <operator active="false" id="0" name="" selected="false" type="org.polygonize.ats.operators.generators.PerlinNoise" width="96" x="208" y="0">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="2"/>
+                <param name="fbm octaves" value="8"/>
+                <param name="random seed" value="39"/>
+                <param name="absolute noise" value="true"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="0"/>
+            </params>
+        </operator>
+        <operator active="false" id="1" name="" selected="false" type="org.polygonize.ats.operators.AtsColorizeOperator" width="96" x="208" y="16">
+            <inputs>
+                <input idref="0"/>
+            </inputs>
+            <params>
+                <param name="color 1" value="#201300FF"/>
+                <param name="color 2" value="#FFB800FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="2" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="208" y="32">
+            <inputs>
+                <input idref="1"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="140"/>
+                <param name="contrast" value="255"/>
+                <param name="brightness" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="3" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="208" y="48">
+            <inputs>
+                <input idref="2"/>
+            </inputs>
+            <params>
+                <param name="hue" value="0"/>
+                <param name="saturation" value="140"/>
+                <param name="contrast" value="158"/>
+                <param name="brightness" value="123"/>
+            </params>
+        </operator>
+        <operator active="false" id="4" name="" selected="true" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="304" y="48">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="2"/>
+                <param name="fbm octaves" value="3"/>
+                <param name="random seed" value="9"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="5" name="" selected="false" type="org.polygonize.ats.operators.AtsMarbleDistortOperator" width="192" x="208" y="64">
+            <inputs>
+                <input idref="3"/>
+                <input idref="4"/>
+            </inputs>
+            <params>
+                <param name="scale" value="218"/>
+                <param name="turbolence" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="6" name="" selected="false" type="org.polygonize.ats.operators.misc.Nop" width="96" x="208" y="80">
+            <inputs>
+                <input idref="5"/>
+            </inputs>
+        </operator>
+        <operator active="false" id="7" name="" selected="false" type="org.polygonize.ats.operators.AtsNormalMapOperator" width="96" x="304" y="80">
+            <inputs>
+                <input idref="5"/>
+            </inputs>
+            <params>
+                <param name="scale" value="48"/>
+            </params>
+        </operator>
+        <operator active="true" id="8" name="" selected="false" type="org.polygonize.ats.operators.AtsPhongOperator" width="192" x="208" y="96">
+            <inputs>
+                <input idref="6"/>
+                <input idref="7"/>
+            </inputs>
+            <params>
+                <param name="ambient" value="#FFC65BFF"/>
+                <param name="diffuse" value="#A47DA5FF"/>
+                <param name="specular" value="#6F8A97FF"/>
+                <param name="specPower" value="54"/>
+                <param name="xPosition" value="123"/>
+                <param name="yPosition" value="136"/>
+            </params>
+        </operator>
+    </operatorstack>
+    <comments/>
+</xptsml>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xptsml version="0.1.3">
+    <operatorstack>
+        <operator active="false" id="0" name="" selected="false" type="org.polygonize.ats.operators.generators.Cell" width="96" x="64" y="48">
+            <params>
+                <param name="random seed" value="47"/>
+                <param name="quantity" value="5"/>
+                <param name="distribution type" value="0"/>
+                <param name="minimum distance" value="2"/>
+                <param name="linear combination" value="0"/>
+                <param name="metric" value="0"/>
+                <param name="mosaic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="1" name="" selected="false" type="org.polygonize.ats.operators.generators.Cell" width="96" x="256" y="48">
+            <params>
+                <param name="random seed" value="47"/>
+                <param name="quantity" value="20"/>
+                <param name="distribution type" value="0"/>
+                <param name="minimum distance" value="2"/>
+                <param name="linear combination" value="0"/>
+                <param name="metric" value="0"/>
+                <param name="mosaic" value="false"/>
+            </params>
+        </operator>
+        <operator active="false" id="2" name="" selected="false" type="org.polygonize.ats.operators.AtsColorizeOperator" width="96" x="64" y="64">
+            <inputs>
+                <input idref="0"/>
+            </inputs>
+            <params>
+                <param name="color 1" value="#000000FF"/>
+                <param name="color 2" value="#FF4544FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="3" name="" selected="false" type="org.polygonize.ats.operators.AtsColorizeOperator" width="96" x="256" y="64">
+            <inputs>
+                <input idref="1"/>
+            </inputs>
+            <params>
+                <param name="color 1" value="#000000FF"/>
+                <param name="color 2" value="#FF4040FF"/>
+            </params>
+        </operator>
+        <operator active="false" id="4" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="64" y="80">
+            <inputs>
+                <input idref="2"/>
+            </inputs>
+            <params>
+                <param name="hue" value="9"/>
+                <param name="saturation" value="127"/>
+                <param name="contrast" value="232"/>
+                <param name="brightness" value="116"/>
+            </params>
+        </operator>
+        <operator active="false" id="5" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="160" y="80">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="2"/>
+                <param name="fbm octaves" value="6"/>
+                <param name="random seed" value="47"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="6" name="" selected="false" type="org.polygonize.ats.operators.filters.Bchsl" width="96" x="256" y="80">
+            <inputs>
+                <input idref="3"/>
+            </inputs>
+            <params>
+                <param name="hue" value="76"/>
+                <param name="saturation" value="127"/>
+                <param name="contrast" value="149"/>
+                <param name="brightness" value="85"/>
+            </params>
+        </operator>
+        <operator active="false" id="7" name="" selected="false" type="org.polygonize.ats.operators.AtsSubPlasmaOperator" width="96" x="352" y="80">
+            <params>
+                <param name="color" value="#FFFFFFFF"/>
+                <param name="frequency" value="2"/>
+                <param name="fbm octaves" value="6"/>
+                <param name="random seed" value="67"/>
+                <param name="absolute noise" value="false"/>
+                <param name="marble mode" value="0"/>
+                <param name="periods" value="1"/>
+                <param name="displacement" value="1"/>
+            </params>
+        </operator>
+        <operator active="false" id="8" name="" selected="false" type="org.polygonize.ats.operators.AtsDistortOperator" width="192" x="64" y="96">
+            <inputs>
+                <input idref="4"/>
+                <input idref="5"/>
+            </inputs>
+            <params>
+                <param name="scale" value="151"/>
+            </params>
+        </operator>
+        <operator active="false" id="9" name="" selected="false" type="org.polygonize.ats.operators.AtsDistortOperator" width="192" x="256" y="96">
+            <inputs>
+                <input idref="6"/>
+                <input idref="7"/>
+            </inputs>
+            <params>
+                <param name="scale" value="58"/>
+            </params>
+        </operator>
+        <operator active="false" id="10" name="" selected="false" type="org.polygonize.ats.operators.filters.Merge" width="384" x="64" y="112">
+            <inputs>
+                <input idref="8"/>
+                <input idref="9"/>
+            </inputs>
+            <params>
+                <param name="blend mode" value="1"/>
+                <param name="alpha" value="255"/>
+            </params>
+        </operator>
+        <operator active="false" id="11" name="" selected="false" type="org.polygonize.ats.operators.filters.Color" width="384" x="64" y="128">
+            <inputs>
+                <input idref="10"/>
+            </inputs>
+            <params>
+                <param name="mode" value="4"/>
+                <param name="color" value="#FFFFFFFF"/>
+            </params>
+        </operator>
+        <operator active="true" id="12" name="" selected="true" type="org.polygonize.ats.operators.filters.Bchsl" width="384" x="64" y="144">
+            <inputs>
+                <input idref="11"/>
+            </inputs>
+            <params>
+                <param name="hue" value="27"/>
+                <param name="saturation" value="95"/>
+                <param name="contrast" value="218"/>
+                <param name="brightness" value="105"/>
+            </params>
+        </operator>
+    </operatorstack>
+    <comments/>
+</xptsml>
