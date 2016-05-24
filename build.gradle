@@ -1,0 +1,56 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.jogamp.gluegen:gluegen-rt-main:2.3.2'
+	compile 'org.jogamp.jogl:jogl-all-main:2.3.2'
+	compile 'org.java.net.substance:substance:6.0'
+	compile 'org.swinglabs:swingx:1.6.1'
+	compile 'com.fifesoft:rsyntaxtextarea:2.5.8'
+	compile 'jgoodies:forms:1.0.5'
+}
+
+mainClassName = 'org.polygonize.ats.AdvancedTextureSystem';
+
+jar {
+ 	from {
+ 		configurations.compile.collect {
+ 			it.isDirectory() ? it : zipTree(it)
+ 		} 
+	} 
+	{
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
+    }
+    manifest {
+        attributes 'Main-Class': 'org.polygonize.ats.AdvancedTextureSystem'
+    }
+}
+
+task copyLicense(type: Copy) {
+    from "LICENSE"
+    into "$buildDir/dist"
+}
+
+task copyTextures(type: Copy) {
+    from "textures"
+    into "$buildDir/dist/textures"
+}
+
+task copyPlugins(type: Copy) {
+    from "plugins"
+    into "$buildDir/dist/plugins"
+}
+
+task copyJar(type: Copy) {
+    from "$buildDir/libs"
+    into "$buildDir/dist"
+}
+
+task buildDistribution(dependsOn: ['copyLicense','copyTextures','copyPlugins','copyJar'])
