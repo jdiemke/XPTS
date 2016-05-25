@@ -1,9 +1,12 @@
 ## XPTS
-
+### How to get
+Type the following command into your shell:
+```bash
+git clone https://github.com/jdiemke/XPTS.git
+```
+This will create a copy of the repository in your current working directory.
 ### What's included
-
 Within the download you'll find the following directories and files. You'll see something like this:
-
 ```
 XPTS/
 ├── images/
