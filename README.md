@@ -17,6 +17,14 @@ XPTS/
 ├── README.md
 └── build.gradle
 ```
+### Dependencies
+XPTS has the following dependencies:
+-   JOGL 2.3.2
+-   GlueGen 2.3.2
+-   Substance Look and Feel 6.0
+-   SwingLabs SwingX 1.6.1
+-   RSyntaxTextArea 2.5.8
+-   JGoodies Forms 1.0.5
 ### Gallery
 ![Texture Gallery](https://raw.githubusercontent.com/jdiemke/XPTS/master/images/texture-gallery.png "Texture Gallery")
 ### License
