@@ -23,7 +23,7 @@ XPTS has the following dependencies:
 -   GlueGen 2.3.2
 -   Substance Look and Feel 6.0
 -   SwingLabs SwingX 1.6.1
--   RSyntaxTextArea 2.5.8
+-   [RSyntaxTextArea 2.5.8](https://github.com/bobbylight/RSyntaxTextArea)
 -   JGoodies Forms 1.0.5
 
 ### Gallery
