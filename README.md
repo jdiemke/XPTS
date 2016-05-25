@@ -25,6 +25,7 @@ XPTS has the following dependencies:
 -   SwingLabs SwingX 1.6.1
 -   RSyntaxTextArea 2.5.8
 -   JGoodies Forms 1.0.5
+
 ### Gallery
 ![Texture Gallery](https://raw.githubusercontent.com/jdiemke/XPTS/master/images/texture-gallery.png "Texture Gallery")
 ### License
