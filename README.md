@@ -1,4 +1,31 @@
 ## XPTS
+### How to get
+Type the following command into your shell:
+```bash
+git clone https://github.com/jdiemke/XPTS.git
+```
+This will create a copy of the repository in your current working directory.
+### What's included
+Within the download you'll find the following directories and files. You'll see something like this:
+```
+XPTS/
+├── images/
+├── plugins/
+├── textures/
+├── src/
+├── LICENSE
+├── README.md
+└── build.gradle
+```
+### Dependencies
+XPTS has the following dependencies:
+-   JOGL 2.3.2
+-   GlueGen 2.3.2
+-   Substance Look and Feel 6.0
+-   SwingLabs SwingX 1.6.1
+-   [RSyntaxTextArea 2.5.8](https://github.com/bobbylight/RSyntaxTextArea) - A syntax highlighting, code folding text editor for Java Swing applications.
+-   JGoodies Forms 1.0.5
+
 ### Gallery
 ![Texture Gallery](https://raw.githubusercontent.com/jdiemke/XPTS/master/images/texture-gallery.png "Texture Gallery")
 ### License
@@ -6,7 +33,7 @@ XPTS is protected by the very permissive MIT license. This means you can do anyt
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Johannes Diemke
+Copyright (c) 2016 Johannes Diemke
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
