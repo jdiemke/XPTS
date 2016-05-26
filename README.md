@@ -1,4 +1,5 @@
 ## XPTS
+[![GitHub version](https://badge.fury.io/gh/jdiemke%2FXPTS.svg)](https://badge.fury.io/gh/jdiemke%2FXPTS) [![Build Status](https://travis-ci.org/jdiemke/XPTS.svg?branch=master)](https://travis-ci.org/jdiemke/XPTS) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 ### How to get
 Type the following command into your shell:
 ```bash
