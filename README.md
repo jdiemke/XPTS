@@ -18,6 +18,12 @@ XPTS/
 ├── README.md
 └── build.gradle
 ```
+### How to build
+XPTS uses Gradle as a build tool. If you want to build a distribution, then it is sufficient to locate into the project's root directory and type the following command into your shell:
+```bash
+gradle distribution
+```
+This will cause Gradle to build `XPTS.zip` in `build/distribution/`.
 ### Dependencies
 XPTS has the following dependencies:
 -   JOGL 2.3.2
