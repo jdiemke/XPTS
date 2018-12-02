@@ -1,5 +1,13 @@
 ## XPTS
-[![GitHub version](https://badge.fury.io/gh/jdiemke%2FXPTS.svg)](https://badge.fury.io/gh/jdiemke%2FXPTS) [![Build Status](https://travis-ci.org/jdiemke/XPTS.svg?branch=master)](https://travis-ci.org/jdiemke/XPTS) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
+[![Build Status](https://travis-ci.org/jdiemke/XPTS.svg?branch=master)](https://travis-ci.org/jdiemke/XPTS)
+[![GitHub stars](https://img.shields.io/github/stars/jdiemke/XPTS.svg)](https://github.com/jdiemke/XPTS/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/jdiemke/XPTS.svg)](https://github.com/jdiemke/XPTS/network)
+[![GitHub issues](https://img.shields.io/github/issues/jdiemke/XPTS.svg)](https://github.com/jdiemke/XPTS/issues)
+[![GitHub license](https://img.shields.io/github/license/jdiemke/XPTS.svg)](https://github.com/jdiemke/XPTS/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/jdiemke/XPTS.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fjdiemke%2FXPTS)
+
+XPTS is a tool for creating procedural textures using the operator stacking paradigm first introduced by the demogroup farbrausch.
+
 ### How to get
 Type the following command into your shell:
 ```bash
